@@ -2,7 +2,8 @@
     box-sizing:border-box;
     margin: 0;
     padding: 0;
-    text-decoration-color: aliceblue;
+    text-decoration-color:black;
+    text-decoration-style: dotted;
 }
 
 body {
@@ -10,8 +11,8 @@ body {
     color:black;
     font-size: 25px;
     font-family: 'Montserrat', sans-serif;
-    background-color: #858b8b;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23dae9e7' fill-opacity='0.18'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-color: #faf5ea;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23788482' fill-opacity='0.18'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 a {
@@ -67,7 +68,6 @@ header {
     flex: 1;
 }
 
-/* SHOWCASE */
 hr {
     width: 1250px;
 }
@@ -75,8 +75,9 @@ hr {
 .showcase {
     width: 1250px;
     height: 600px;
-    background-color: lightgray;
+    background-color:rgb(167, 147, 155);
     padding-bottom: 50px;
+    margin-bottom: 20px;
     flex-direction:column;
     align-items: center;
     justify-content: flex-end; 
@@ -93,11 +94,102 @@ hr {
     border: o;
     font-weight: bold;
     padding: 10px 20ox;
-    background: #262626;
-    color: #ffff;
+    background: #e0e6d0;
+    color: rgb(15, 11, 1);
 }
 
 .btn:hover {
     opacity: .7;
 }
 
+/* SPRODUCTOS/PRECIOS */
+.Productos-precios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.Productos-precios img {
+    width: 85%;
+    height: 180px;
+}
+
+.Productos-precios h5 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.Productos-precios a {
+    padding: 10px o;
+    color: #252525;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: bold;
+}
+.Productos-precios a:hover {
+    text-decoration: underline;
+}
+
+/* CARD BANNER ONE*/
+.cards-banner-one {
+    width: 100%;
+    height: 250px;
+    background-color: rgb(115, 124, 129);
+    margin-bottom: 40px;
+}
+
+.cards-banner-one .content {
+    width: 60%;
+    padding: 30px 0 20px 30px;
+    color: aliceblue;
+    
+}
+
+.cards-banner-one p,
+.cards-banner-one h2 {
+    margin: 10px 0 20px 0;;
+}
+
+/* CARD BANNER TWO*/
+.cards-banner-two {
+    width: 100%;
+    height: 250px;
+    background-color: rgb(160, 180, 152);
+    margin-bottom: 40px;
+}
+
+.cards-banner-two .content {
+    width: 60%;
+    padding: 30px 0 20px 30px;
+    color: rgb(1, 3, 6);
+    
+}
+
+.cards-banner-two p,
+.cards-banner-two h2 {
+    margin: 10px 0 20px 0;;
+}
+
+/* REDES SOCIALES*/
+.Redes-sociales {
+    margin: 50px;
+}
+
+.Redes-sociales p {
+    text-align:left;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.links a {
+    margin: 30px 30px;
+    align-items: center;
+}
+
+.links a i {
+    font-size: 2rem;
+}
