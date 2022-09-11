@@ -2,39 +2,102 @@
     box-sizing:border-box;
     margin: 0;
     padding: 0;
+    text-decoration-color: aliceblue;
 }
 
 body {
     background-color:black;
     color:black;
-    font-size: 16px;
+    font-size: 25px;
     font-family: 'Montserrat', sans-serif;
-    background-color: #f4f4f4;
-    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23a8cbc9' fill-opacity='0.4' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
-
+    background-color: #858b8b;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23dae9e7' fill-opacity='0.18'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 a {
-    color: antiquewhite;
-    text-decoration: none;
-    }
+    color:black;
+    text-decoration:solid;
+}
 
 ul {
     list-style: none;
 }
 
 .container {
-    width: 90%;
-    margin: auto;
+    width: 100%;
+    margin:0%;
 }
 
+header {
+    justify-content: center;
+    align-items: center;
+}
 /*  Navegation */
 .nav-main {
-    font-size: 17px;
+    font-size: 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content:left;
+    align-items:center;
+    height: 3px;
+    padding: 5px 0;
+}
+
+.nav-brand {
+    width: 100px;
+}
+
+/* NAV LEFT */
+.nav-main ul {
+    display: flex;
+}
+
+.nav-main ul li {
+    padding: 10px;
+}
+
+.nav-main ul li a {
+    padding: 5px;
+}
+
+.nav-main ul li a:hover {
+    border-bottom: 2px solid;
+    color: azure;
+}
+.nav-main ul.nav-menu {
+    flex: 1;
+}
+
+/* SHOWCASE */
+hr {
+    width: 1250px;
+}
+
+.showcase {
+    width: 1250px;
+    height: 600px;
+    background-color: lightgray;
+    padding-bottom: 50px;
+    flex-direction:column;
     align-items: center;
-    height: 60px;
-    padding: 20px 0;
+    justify-content: flex-end; 
+}
+
+.showcase p {
+    text-decoration-color: black;
+    text-decoration: overline;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    border: o;
+    font-weight: bold;
+    padding: 10px 20ox;
+    background: #262626;
+    color: #ffff;
+}
+
+.btn:hover {
+    opacity: .7;
 }
 
